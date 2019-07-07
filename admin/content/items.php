@@ -425,7 +425,7 @@
         $("#itemsupplier").val(item.supplierid);
         $("#itemcategory").val(item.categoryid);
         $("#itemtype").val(item.type);
-        $("#barcode").attr('src', 'http://192.168.2.16:8443/barcode4j/gensvg?type=code39&msg=' + item.code + '&fmt=png');
+        $("#barcode").attr('src', 'https://192.168.2.16:8443/barcode4j/gensvg?type=code39&msg=' + item.code + '&fmt=png');
         var modtable = $("#itemmodtable");
         var modselecttable = $("#itemselmodtable");
         modtable.html('');
