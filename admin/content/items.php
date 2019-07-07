@@ -63,6 +63,11 @@
                     Options
                 </a>
             </li>
+            <li class="">
+                <a href="#itembarcode" data-toggle="tab">
+                    Barcode
+                </a>
+            </li>
         </ul>
         <div class="tab-content" style="min-height: 320px;">
             <div class="tab-pane active in" id="itemdetails">
@@ -156,6 +161,9 @@
                         <button style="float: right; margin-right: 8px;" class="btn btn-primary btn-xs" onclick="addSelectItemModifier();">Add</button>
                     </div>
                 </form>
+            </div>
+            <div class="tab-pane" id="itembarcode" style="min-height: 280px;">
+                <img id="barcode" width="100%" height="100%"/>
             </div>
         </div>
     </div>
@@ -417,6 +425,7 @@
         $("#itemsupplier").val(item.supplierid);
         $("#itemcategory").val(item.categoryid);
         $("#itemtype").val(item.type);
+        $("#barcode").src('http://192.168.2.16:8443/barcode4j/gensvg?type=code39&msg=' + item.code + '&fmt=png');
         var modtable = $("#itemmodtable");
         var modselecttable = $("#itemselmodtable");
         modtable.html('');
