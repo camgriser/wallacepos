@@ -163,7 +163,7 @@
                 </form>
             </div>
             <div class="tab-pane" id="itembarcode" style="min-height: 280px;">
-                <img id="barcode" width="100%" height="100%"/>
+                <img id="barcode" width="100%" height="100%" style="margin-top: 40px"/>
             </div>
         </div>
     </div>
